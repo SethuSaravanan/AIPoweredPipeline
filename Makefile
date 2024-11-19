@@ -30,10 +30,10 @@ hf-login:
 	huggingface-cli login --token $(HF) --add-to-git-credential
 
 push-hub: 
-	huggingface-cli upload saravs200/NewAIModel ./App --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload saravs200/NewAIModel ./Model /Model --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload saravs200/NewAIModel ./Results /Metrics --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload saravs200/NewAIModel ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload saravs2000/NewAIModel ./App --repo-type=space --commit-message="Sync App files"
+	huggingface-cli upload saravs2000/NewAIModel ./Model /Model --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload saravs2000/NewAIModel ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload saravs2000/NewAIModel ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
 
